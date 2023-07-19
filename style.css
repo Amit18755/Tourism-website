@@ -1,0 +1,288 @@
+ *{
+   padding: 0;
+   margin: 0;
+   color: black;
+
+ } 
+  
+ #upper{
+    height: 400px;
+    background-color: #04ce815e; 
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-image: url("pics/sky.avif");
+    background-size: cover;
+    
+   
+ }
+ #navbar{
+    height:80px;
+    background-color: #CC9900;
+     
+     
+ }
+ .link{ 
+   
+    margin-right: 200px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+ }
+ 
+#pic1, #pic2, #pic3{
+   border-radius: 10%;
+   height: 300px;
+   width: 350px;
+   border: 1px solid rgb(245, 120, 25);
+   display: inline-block;
+   margin-bottom: 0;
+   margin-top: 100px;
+}
+#pic1{
+   background-image: url("pics/budha1.jpg");
+   background-size: cover;
+}
+#pic2{
+   background-image: url("pics/logo.jpg");
+   background-size: cover;
+}
+#pic3{
+   background-image: url("pics/budha2.jpg");
+   background-size: cover;
+}
+#slogan{
+   color: white;
+   font-size: 20px;
+   text-align: center;
+   margin-top: 23px;
+
+}
+#para_overview{
+   font-size: 20px;
+   font-family:'Times New Roman', Times, serif;
+   margin-left: 10px;
+}
+#heading{
+   font-size: 30px;
+   margin-left: 10px;
+}
+.pic_left{
+   margin: 10px;
+   float: left;
+   width:40%;
+
+}
+.para_right{
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 10px;
+
+}
+.pic_right{
+    margin: 10px;
+    float:right;
+    width: 40%;
+
+}
+.para_left{
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 10px;
+}
+.details{
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0px;
+   padding: 0px;
+}
+
+.button_click{
+   margin-left: 10px;
+   margin-top: 150px ;
+   height: 35px;
+   width: 150px;
+   background-color:#CC9900;
+   color: black;
+   font-size: 15px;
+   border: 2px solid black;
+   border-radius: 5px;
+
+   
+}
+#front_pic{
+   height: 400px;
+   width: 40%;
+}
+ 
+.pos_block{
+  height: 500px; 
+}
+#footer_index{
+   height: 75px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  #37475A;
+
+}
+#footer_para{
+   color: white;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+}
+#footer_source{
+   margin-left: 10px;
+   color: white;
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   text-align:left;
+}
+#footer_about_us{
+   /* position: fixed; */
+   height: 75px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:  #37475A;
+}
+
+
+
+ /* media queries for responsive */
+ @media (min-width:350px) and (max-width:550px) {
+  
+   #upper{
+      flex-direction: column;
+  }
+  #pic1, #pic2, #pic3{
+   border-radius: 10%;
+   height: 300px;
+   width: 80%;
+   border: 1px solid rgb(245, 120, 25);
+   display: block;
+   margin-left: 10%;
+   margin-right: 10%;
+   margin-bottom: 10px;
+   margin-top: 10px;
+}
+.para_right{
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 2px;
+
+}
+.para_left{
+   font-size: 15px;
+   font-family: 'Times New Roman', Times, serif;
+   margin: 2px;
+}
+.pos_block{
+   height: 650px; 
+ }
+   .link{ 
+      margin-top: 5px;
+      margin-right: 20px;
+      font-size: 15px;
+       
+   } 
+   #slogan{
+      font-size: 12px;
+      margin-top: 18px;
+   
+   }
+
+   #footer_para{
+      font-size: 10px;  
+   }
+   #footer_source{
+      margin-bottom: 10px;
+      margin-left: 2px;
+      font-size: 10px;
+       
+   }
+   #details_para{
+      margin-left: 0px;
+      font-size: 15px;
+   }
+    
+}
+
+ @media (min-width:550px)and (max-width:770px){
+   .pos_block{
+      height: 650px; 
+    }
+   .link{ 
+      margin-top: 5px;
+      margin-right: 25px;
+      font-size: 15px;
+       
+   } 
+   #slogan{
+       font-size: 18px;
+       margin-top: 20px;
+   }
+
+   #footer_para{
+      font-size: 15px;
+    }
+   #footer_source{
+      margin-bottom: 10px;
+      margin-left: 8px;
+      font-size: 15px;
+   } 
+    
+ }
+
+ @media (min-width:770px) and (max-width:1024px){
+   
+   .pos_block{
+      height: 550px; 
+    }.link{ 
+      margin-top: 5px;
+      margin-right: 40px;
+      font-size: 20px;
+       
+   } 
+   #slogan{
+      font-size: 20px; 
+      margin-top: 20px;
+   }
+
+   #footer_para{
+      color: white;
+      font-size: 15px;
+   }
+   #footer_source{
+      margin-bottom: 10px;
+      margin-left: 8px;
+      font-size: 15px; 
+   } 
+    
+ }
+
+ @media (min-width:1024px){
+   .link{ 
+      margin-top: 5px;
+      margin-right: 90px;
+      font-size: 20px;
+       
+   } 
+   #slogan{
+      font-size: 20px; 
+      margin-top: 20px;
+   }
+
+   #footer_para{
+      font-size: 15px;
+    }
+   #footer_source{
+      margin-bottom: 10px;
+      margin-left: 8px;
+      font-size: 15px; 
+   } 
+   
+ }
+ 
