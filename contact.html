@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_contact.css">
+    <script src="https://kit.fontawesome.com/8f53ca1044.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    
+    <div  id="loading">
+        Submitting......... 
+  </div>
+    <div class="hero">
+        
+        
+        <form id="form" method="post" action="https://script.google.com/macros/s/AKfycbzn4wcDj5uW8UTnX67TZjlG1l_eA7C3UG9d1LzFQS8FK4m16ZtVx6F-aO5MyLEUIrrU/exec" name="contactform" id="contactform">
+             
+            <div class="input-group"> 
+            <input type="text"  id="name" required name="name">
+            <label for="name" > <i class="fa-solid fa-user"></i> Name</label>
+        </div>
+         
+        <!-- <form  > -->
+            <div class="input-group"> 
+            <input type="text"  id="number" required name="number">
+            <label for="number"><i class="fa-solid fa-phone"></i> Contact No </label>
+        </div>
+        <!-- <form  > -->
+            <div class="input-group"> 
+            <input type="text"  id="email" required name="email">
+            <label for="email"><i class="fa-solid fa-envelope"></i> Email Id</label>
+        </div>
+        <div class="input-group">
+            <textarea name="message"  rows="8" required name="message"></textarea>
+            <label for="message"> <i class="fa-solid fa-message"></i> Message</label>
+        </div>
+        <button type="submit" name="btn"><i class="fa-solid fa-paper-plane"></i>  Submit</button>
+        </form>
+    </div>
+
+    <!-- Function to get details from form -->
+<script defer >
+    window.addEventListener("load", function() {
+      const form = document.getElementById('form');
+      
+      form.addEventListener("submit", function(e) {
+          e.preventDefault();
+          document.getElementById('loading').style.display = "block";
+          const data = new FormData(form);
+          const action = e.target.action;
+  
+          fetch(action, {
+              method: 'POST',
+              body: data,
+          })
+          .then(() => {
+              alert("Success!");
+              window.location.reload(); // Refresh the page
+              document.getElementById('loading').style.display = 'none';
+          })
+          .catch(error => {
+              console.error('Error:', error);
+          });
+      });
+  });
+  
+  
+  </script>
+     
+</body>
+
+
+
+</html>

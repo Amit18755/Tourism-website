@@ -1,26 +1,24 @@
  *{
-   padding: 0;
-   margin: 0;
-   color: black;
-
- } 
-  
- #upper{
-    height: 400px;
-    background-color: #04ce815e; 
-    display:flex;
-    flex-direction: row;
-    justify-content:space-between;
-    background-image: url("pics/sky.avif");
-    background-size: cover;
-    
-   
+    padding: 0;
+    margin: 0;
  }
- #navbar{
+/* Css for the navbar  */
+#navbar{
     height:80px;
     background-color: #CC9900;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* z-index: 1000;  */
+    /* To ensure the navigation bar is on top of other elements */
+
      
      
+ }
+ html{
+   scroll-behavior: smooth;
+   scroll-padding-top: 100px;
  }
  .link{ 
    
@@ -30,158 +28,407 @@
     text-decoration: none;
     color: white;
  }
+ a:hover {
+   transform: scale(1.5); /* Increase size on hover */
+   color:red; /* Change link color on hover */
+   text-shadow: 0 0 5px rgba(246, 243, 242, 0.7); /* Add a subtle glow effect */
+}
+ #slogan{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 23px;
  
-#pic1, #pic2, #pic3{
-   border-radius: 10%;
-   height: 300px;
-   width: 350px;
-   border: 1px solid rgb(245, 120, 25);
-   display: inline-block;
-   margin-bottom: 0;
-   margin-top: 100px;
-}
-#pic1{
-   background-image: url("pics/budha1.jpg");
-   background-size: cover;
-}
-#pic2{
-   background-image: url("pics/logo.jpg");
-   background-size: cover;
-}
-#pic3{
-   background-image: url("pics/budha2.jpg");
-   background-size: cover;
-}
-#slogan{
-   color: white;
-   font-size: 20px;
-   text-align: center;
-   margin-top: 23px;
+ }
 
+ .section {
+
+    width: 100%;
+    height: auto;
+    /* padding: 20px; */
+    text-align: center;
+    margin-top: 100px; /* To create space for the fixed navigation bar */
 }
-#para_overview{
-   font-size: 20px;
-   font-family:'Times New Roman', Times, serif;
+
+#section_details{
+   text-align: left;
    margin-left: 10px;
+   size: 35px;
 }
-#heading{
+#upper{
+    height: 410px;
+    /* background-color: #04ce815e;  */
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    background-size: cover;
+    background-image: url("pics/about_us.jpg");
+    
+   
+ }
+
+  
+ .front_pic_box img{
+   width: 100%;
+   height: 100%;
+}
+ .front_pic_box{
+    border: 1px solid rgb(245, 120, 25);
+    border-radius: 10%;
+    height: 300px;
+    width: 350px;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 100px;
+     
+ }
+  
+ .overview_para{
+   width: 100%;
+   height: auto;
+ }
+  
+ #para_overview{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left: 10px;
+    text-align: left;
+ }
+ #heading{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 10px;
+    text-align: left;
+ }
+
+ .pic_left{
+    margin: 10px;
+    float: left;
+    width:40%;
+ 
+ }
+ .para_right{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    text-align: left;
+ 
+ }
+ .pic_right{
+     margin: 10px;
+     float:right;
+     width: 40%;
+ 
+ }
+ .para_left{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+    text-align: left;
+ }
+  
+ #front_pic{
+    height: 400px;
+    width: 40%;
+ }
+  
+ .pos_block{
+   height: 450px;
+   width: 90%; 
+ }
+ #footer_index{
+    height: 75px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #37475A;
+ 
+ }
+ #footer_para{
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+ }
+ #footer_source{
+    margin-left: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:left;
+ }
+ #footer_about_us{
+    /* position: fixed;  */
+    height: 75px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:  #37475A;
+ }
+
+  
+
+
+  /* css for gallery section */
+  .pic_gallery{
+   height: 400px; 
+   width: 100%;
+   display:flex;
+   flex-direction: row;
+   justify-content:space-between;
+   
+  
+ }
+ #place_name{
+  font-size: 30px;
+  margin-left: 10px;
+ }
+ .pic_box{
+  border-radius: 5%;
+  height: 300px;
+  width: 350px;
+  border: 1px solid rgb(245, 120, 25);
+  display: inline-block;
+  margin-bottom: 0;
+  margin-top: 20px;
+ }
+ .pic_box img{
+   width: 100%;
+   height: 100%;
+ }
+
+
+
+/* css for official link */
+
+#official_div{
+   /* background-color: #55BCC9; */
+   width: 100%;
+   height: 250px;
+  }
+  #official_heading{
+   text-align: left;
    font-size: 30px;
    margin-left: 10px;
-}
-.pic_left{
-   margin: 10px;
-   float: left;
-   width:40%;
-
-}
-.para_right{
-   font-size: 20px;
    font-family: 'Times New Roman', Times, serif;
-   margin: 10px;
-
-}
-.pic_right{
-    margin: 10px;
-    float:right;
-    width: 40%;
-
-}
-.para_left{
-   font-size: 20px;
-   font-family: 'Times New Roman', Times, serif;
-   margin: 10px;
-}
-.details{
-   font-size: 20px;
-   font-family: 'Times New Roman', Times, serif;
-   margin: 0px;
-   padding: 0px;
-}
-
-.button_click{
-   margin-left: 10px;
-   margin-top: 150px ;
-   height: 35px;
-   width: 150px;
-   background-color:#CC9900;
-   color: black;
-   font-size: 15px;
-   border: 2px solid black;
-   border-radius: 5px;
-
    
-}
-#front_pic{
-   height: 400px;
-   width: 40%;
-}
- 
-.pos_block{
-  height: 500px; 
-}
-#footer_index{
-   height: 75px;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   background-color:  #37475A;
-
-}
-#footer_para{
-   color: white;
-   font-size: 15px;
-   font-family: 'Times New Roman', Times, serif;
-   text-align: center;
-}
-#footer_source{
+  }
+  #official_para_details{
+   
    margin-left: 10px;
-   color: white;
-   font-size: 15px;
+   font-size: 20px;
+   font-family:'Times New Roman', Times, serif;
+   text-align: left;
+  }
+  #official_link_details{
+ 
+   margin-left: 10px;
+   font-size: 20px;
    font-family: 'Times New Roman', Times, serif;
-   text-align:left;
-}
-#footer_about_us{
-   /* position: fixed; */
-   height: 75px;
-   left: 0;
-   bottom: 0;
+   text-align: left;
+    
+   color:rgb(36, 36, 249);
+   }
+
+/* css for the reach sction */
+#reach_div{
+    
    width: 100%;
-   background-color:  #37475A;
-}
+   height: 1200px;
+  }
+  #place{
+   margin-left: 10px;
+   font-size: 25px;
+   font-family: 'Times New Roman', Times, serif; 
+   color:red;  
+   text-align: left;
+  }
+  #place_details{
+   margin-left: 10px;
+   font-size: 17px;
+   font-family:Arial, Helvetica, sans-serif; 
+   color:black;  
+   text-align: left;
+  }
 
 
+/* media query for section home part */
 
  /* media queries for responsive */
  @media (min-width:350px) and (max-width:550px) {
   
-   #upper{
-      flex-direction: column;
-  }
-  #pic1, #pic2, #pic3{
-   border-radius: 10%;
-   height: 300px;
-   width: 80%;
-   border: 1px solid rgb(245, 120, 25);
-   display: block;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-bottom: 10px;
-   margin-top: 10px;
-}
-.para_right{
-   font-size: 15px;
-   font-family: 'Times New Roman', Times, serif;
-   margin: 2px;
-
-}
-.para_left{
-   font-size: 15px;
-   font-family: 'Times New Roman', Times, serif;
-   margin: 2px;
-}
-.pos_block{
-   height: 650px; 
+    #upper{
+       flex-direction: column;
+       width: 110%;
+       height: 600px;
+   }
+   .link{ 
+   
+      margin-right: 150px;
+      font-size: 18px;
+      
+   }
+   #slogan{
+    
+      font-size: 18px;
+     
+   }
+   
+   .front_pic_box{
+    border-radius: 10%;
+    height: 30%;
+    width: 80%;
+    border: 1px solid rgb(245, 120, 25);
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    margin-top: 5px;
  }
+ .front_pic_box img{
+    width: 100%;
+    height: 100%;
+ }
+ .para_right{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px;
+ 
+ }
+ .para_left{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px;
+ }
+ .pos_block{
+    height: 650px; 
+  }
+    .link{ 
+       margin-top: 5px;
+       margin-right: 20px;
+       font-size: 15px;
+        
+    } 
+    #slogan{
+       font-size: 12px;
+       margin-top: 18px;
+    
+    }
+ 
+    #footer_para{
+       font-size: 10px;  
+    }
+    #footer_source{
+       margin-bottom: 10px;
+       margin-left: 2px;
+       font-size: 10px;
+        
+    }
+    #details_para{
+       margin-left: 0px;
+       font-size: 15px;
+    }
+    #footer_about_us{
+      width: 110%;
+      }
+     
+ }
+ 
+  @media (min-width:550px)and (max-width:770px){
+    .pos_block{
+       height: 650px; 
+     }
+    .link{ 
+       margin-top: 5px;
+       margin-right: 25px;
+       font-size: 15px;
+        
+    } 
+    #slogan{
+        font-size: 18px;
+        margin-top: 20px;
+    }
+ 
+    #footer_para{
+       font-size: 15px;
+     }
+    #footer_source{
+       margin-bottom: 10px;
+       margin-left: 8px;
+       font-size: 15px;
+    } 
+     
+  }
+ 
+  @media (min-width:770px) and (max-width:1024px){
+    
+    .pos_block{
+       height: 550px; 
+     }.link{ 
+       margin-top: 5px;
+       margin-right: 40px;
+       font-size: 20px;
+        
+    } 
+    #slogan{
+       font-size: 20px; 
+       margin-top: 20px;
+    }
+ 
+    #footer_para{
+       color: white;
+       font-size: 15px;
+    }
+    #footer_source{
+       margin-bottom: 10px;
+       margin-left: 8px;
+       font-size: 15px; 
+    } 
+     
+  }
+ 
+  @media (min-width:1024px){
+    .link{ 
+       margin-top: 5px;
+       margin-right: 90px;
+       font-size: 20px;
+        
+    } 
+    #slogan{
+       font-size: 20px; 
+       margin-top: 20px;
+    }
+ 
+    #footer_para{
+       font-size: 15px;
+     }
+    #footer_source{
+       margin-bottom: 10px;
+       margin-left: 8px;
+       font-size: 15px; 
+    } 
+    
+  }
+
+
+   /* media queries for responsive */
+ @media (min-width:350px) and (max-width:550px) {
+   .pic_gallery{
+       height: 800px; 
+       width: 100%;
+       display:flex;
+       flex-direction:column;
+       justify-content:space-between;
+      }
+      .pic_box{
+       margin-top: 5px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       width: 85%;
+       height: 190px;
+      }
    .link{ 
       margin-top: 5px;
       margin-right: 20px;
@@ -211,78 +458,116 @@
 }
 
  @media (min-width:550px)and (max-width:770px){
-   .pos_block{
-      height: 650px; 
-    }
-   .link{ 
-      margin-top: 5px;
-      margin-right: 25px;
-      font-size: 15px;
-       
-   } 
-   #slogan{
-       font-size: 18px;
-       margin-top: 20px;
-   }
-
-   #footer_para{
-      font-size: 15px;
-    }
-   #footer_source{
-      margin-bottom: 10px;
-      margin-left: 8px;
-      font-size: 15px;
-   } 
-    
- }
-
- @media (min-width:770px) and (max-width:1024px){
+   .pic_gallery{
+       height: 1700px; 
+       width: 100%;
+       display:flex;
+       flex-direction:column;
+       justify-content:space-between;
+      }
+       .pic_box{
+       height: 400px;
+       margin-top: 10px;
+       display:block;
+       margin-left:15%;
+       margin-right: 15%;
+       width: 70%;
+      } 
    
-   .pos_block{
-      height: 550px; 
-    }.link{ 
-      margin-top: 5px;
-      margin-right: 40px;
-      font-size: 20px;
-       
-   } 
-   #slogan{
-      font-size: 20px; 
-      margin-top: 20px;
-   }
-
-   #footer_para{
-      color: white;
-      font-size: 15px;
-   }
-   #footer_source{
-      margin-bottom: 10px;
-      margin-left: 8px;
-      font-size: 15px; 
-   } 
-    
  }
+ /* media query for section home part */
 
- @media (min-width:1024px){
-   .link{ 
-      margin-top: 5px;
-      margin-right: 90px;
-      font-size: 20px;
-       
-   } 
-   #slogan{
-      font-size: 20px; 
-      margin-top: 20px;
+ /* media queries for responsive */
+ @media (min-width:350px) and (max-width:550px) {
+  
+    #upper{
+       flex-direction: column;
+       width: 110%;
+       height: 600px;
    }
-
-   #footer_para{
-      font-size: 15px;
-    }
-   #footer_source{
-      margin-bottom: 10px;
-      margin-left: 8px;
-      font-size: 15px; 
-   } 
-   
+   .front_pic_box{
+    border-radius: 10%;
+    height: 30%;
+    width: 80%;
+    border: 1px solid rgb(245, 120, 25);
+    display: block;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5px;
+    margin-top: 5px;
+ }
+ .front_pic_box img{
+    width: 100%;
+    height: 100%;
+ }
+ .para_right{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px;
+ 
+ }
+ .para_left{
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2px;
+ }
+ .pos_block{
+    height: 650px; 
+  }
+     
+  
  }
  
+  @media (min-width:550px)and (max-width:770px){
+    .pos_block{
+       height: 650px; 
+     }
+     
+  }
+ 
+  @media (min-width:770px) and (max-width:1024px){
+    
+    .pos_block{
+       height: 550px; 
+     } 
+     
+  }
+ 
+   
+
+  /* media query for the how to reach section */
+  @media (min-width:350px) and (max-width:550px) {
+   #reach_div{
+      height: 1500px;
+   }
+   
+}
+
+ @media (min-width:550px)and (max-width:770px){
+   #reach_div{
+      height: 1700px;
+   }
+    
+ }
+ /* media query for official section */
+ 
+ @media (min-width:350px) and (max-width:550px) {
+   #official_div{
+      /* background-color: #55BCC9; */
+      width: 100%;
+      height: 500px;
+     }
+   
+}
+@media (min-width:550px)and (max-width:770px){
+   #official_div{
+      height: 350px;
+   }
+ 
+}
+
+ 
+  
+
+ 
+
