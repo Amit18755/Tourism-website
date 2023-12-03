@@ -2,6 +2,13 @@
     padding: 0;
     margin: 0;
  }
+ body {
+   /* height:auto;
+   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
+   background-color: #74EBD5;
+   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+   
+ }
 /* Css for the navbar  */
 #navbar{
     height:80px;
@@ -15,13 +22,6 @@
 
      
      
- }
- body {
-   /* height:auto;
-   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); */
-   background-color: #74EBD5;
-   background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
-   
  }
  html{
    scroll-behavior: smooth;
@@ -37,7 +37,7 @@
  }
  a:hover {
    transform: scale(1.5); /* Increase size on hover */
-   color:red; /* Change link color on hover */
+   color:rgb(11, 27, 250); /* Change link color on hover */
    text-shadow: 0 0 5px rgba(246, 243, 242, 0.7); /* Add a subtle glow effect */
 }
  #slogan{
@@ -79,6 +79,8 @@
  .front_pic_box img{
    width: 100%;
    height: 100%;
+   border: 2px solid  rgb(245, 120, 25); 
+   border-radius: 5%;
 }
  .front_pic_box{
     border: 1px solid rgb(245, 120, 25);
@@ -113,6 +115,8 @@
     margin: 10px;
     float: left;
     width:40%;
+    border: 2px solid  rgb(245, 120, 25); 
+   border-radius: 5%;
  
  }
  .para_right{
@@ -126,7 +130,8 @@
      margin: 10px;
      float:right;
      width: 40%;
- 
+     border: 2px solid  rgb(245, 120, 25); 
+     border-radius: 5%;
  }
  .para_left{
     font-size: 20px;
@@ -179,6 +184,7 @@
 
   /* css for gallery section */
   .pic_gallery{
+   
    height: 400px; 
    width: 100%;
    display:flex;
@@ -189,13 +195,13 @@
  }
  #place_name{
   font-size: 30px;
-  margin-left: 10px;
+  ;text-align: center;
  }
  .pic_box{
   border-radius: 5%;
   height: 300px;
   width: 350px;
-  border: 1px solid rgb(245, 120, 25);
+  border: 2px solid rgb(245, 120, 25);
   display: inline-block;
   margin-bottom: 0;
   margin-top: 20px;
@@ -203,6 +209,9 @@
  .pic_box img{
    width: 100%;
    height: 100%;
+   border: 2px solid  rgb(245, 120, 25); 
+   border-radius: 5%;
+ 
  }
 
 
@@ -212,7 +221,7 @@
 #official_div{
    /* background-color: #55BCC9; */
    width: 100%;
-   height: 250px;
+   height: auto;
   }
   #official_heading{
    text-align: left;
@@ -227,6 +236,7 @@
    font-size: 20px;
    font-family:'Times New Roman', Times, serif;
    text-align: left;
+   color:black;
   }
   #official_link_details{
  
@@ -234,28 +244,46 @@
    font-size: 20px;
    font-family: 'Times New Roman', Times, serif;
    text-align: left;
-    
-   color:rgb(36, 36, 249);
+   color:red;
    }
+
+   #link_box3{
+     margin-right: 10%;
+     background-image: url("pics/ministrylogo.png");
+     background-size: cover;
+     opacity: 0.9;
+     
+   } 
+   #link_box1{
+      margin-left: 10%;
+      background-image: url("pics/budhalogo.png");
+      background-size: cover;
+    
+   }
+   #link_box2{
+      background-image: url("pics/irctc_logo.png");
+      background-size: cover;
+   }
+
 
 /* css for the reach sction */
 #reach_div{
     
    width: 100%;
-   height: 1200px;
+   height: auto;
   }
   #place{
    margin-left: 10px;
-   font-size: 25px;
+   font-size: 30px;
    font-family: 'Times New Roman', Times, serif; 
-   color:red;  
+   color:rgb(245, 9, 9);  
    text-align: left;
   }
   #place_details{
    margin-left: 10px;
    font-size: 17px;
    font-family:Arial, Helvetica, sans-serif; 
-   color:black;  
+   color:rgb(0, 0, 0);  
    text-align: left;
   }
 
@@ -264,7 +292,24 @@
 
  /* media queries for responsive */
  @media (min-width:350px) and (max-width:550px) {
-  
+    
+
+   #navbar{
+      height:80px; 
+      width: 100%;
+   }
+   .link{ 
+      margin-right: 10px;
+   }
+    
+   #slogan{
+      
+      font-size: 20px;
+      text-align: center;
+      margin-top: 23px;
+   
+   }
+
     #upper{
        flex-direction: column;
        width: 110%;
@@ -276,11 +321,7 @@
       font-size: 18px;
       
    }
-   #slogan{
-    
-      font-size: 18px;
-     
-   }
+  
    
    .front_pic_box{
     border-radius: 10%;
@@ -337,8 +378,11 @@
        font-size: 15px;
     }
     #footer_about_us{
-      width: 110%;
+      width: 100%;
       }
+   #official_para_details{
+      font-size: 17px;
+   }
      
  }
  
@@ -365,6 +409,10 @@
        margin-left: 8px;
        font-size: 15px;
     } 
+    
+   #reach_div{
+     height: auto;
+   }
      
   }
  
@@ -489,7 +537,7 @@
   
     #upper{
        flex-direction: column;
-       width: 110%;
+       width: 100%;
        height: 600px;
    }
    .front_pic_box{
@@ -542,39 +590,9 @@
  
    
 
-  /* media query for the how to reach section */
-  @media (min-width:350px) and (max-width:550px) {
-   #reach_div{
-      height: 1500px;
-   }
    
-}
-
- @media (min-width:550px)and (max-width:770px){
-   #reach_div{
-      height: 1700px;
-   }
-    
- }
- /* media query for official section */
  
- @media (min-width:350px) and (max-width:550px) {
-   #official_div{
-      /* background-color: #55BCC9; */
-      width: 100%;
-      height: 500px;
-     }
-   
-}
-@media (min-width:550px)and (max-width:770px){
-   #official_div{
-      height: 350px;
-   }
- 
-}
-
- 
-  
-
  
 
+
+ 
